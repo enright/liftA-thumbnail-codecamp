@@ -1,0 +1,35 @@
+{
+  "name": "lifta-thumbnail",
+  "version": "0.0.3",
+  "description": "compasspathway.com emblem generation",
+  "main": "liftA-thumbnail.js",
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "scripts": {
+    "test": "mocha tests/test-tempFileCleanup; mocha tests/test-phantomRun; mocha tests/test-getUserAndHTML; mocha tests/test-writeHTML; mocha tests/test-putThumbnail.js",
+    "hint": "jshint *.js",
+    "build": "browserify browserify/visual.js -o bucket/javascripts/visual.js"
+  },
+  "author": "Bill Enright",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "d3": "^3.5.6",
+    "d3-cloud": "^1.2.0",
+    "lifta": "0.0.19",
+    "lifta-syntax": "0.0.1",
+    "lifta-dynamodb": "0.0.11",
+    "lifta-fs": "0.0.7",
+    "lifta-s3": "0.0.8",
+    "phantomjs-prebuilt": "^2.1.16",
+    "restify": "^5.2.1",
+    "uuid": "^3.2.1",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jshint": "^2.9.5",
+    "mock-require": "^3.0.2"
+  }
+}

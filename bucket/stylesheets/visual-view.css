@@ -1,0 +1,19 @@
+/* we're using rem so set font size to browser default */
+html {
+	font-size: 100%;
+}
+
+body {
+  width: 400px;
+	height: 400px;
+	font-family: OpenSans, sans-serif;
+	margin: 0;
+	border: none;
+}
+
+div#profile-div {
+	width: 400px;
+	height: 400px;
+	margin: 0;
+	border: none;
+}
